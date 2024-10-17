@@ -1,0 +1,24 @@
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php'; 
+
+use App\Console\ControllerGenerator;
+
+if ($argc < 3) {
+    echo "Usage: generate make:controller ControllerName\n";
+    exit(1);
+}
+
+$command = $argv[1];
+$resourceName = $argv[2];
+
+// Handle the command
+switch ($command) {
+    case 'make:controller':
+        ControllerGenerator::create($resourceName);
+        break;
+
+    default:
+        echo "Unknown command: $command\n";
+        exit(1);
+}

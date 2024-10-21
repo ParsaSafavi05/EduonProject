@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Models;
 
@@ -99,6 +99,7 @@ class DB
             return false;
         }
     }
+
 
     public function first()
     {

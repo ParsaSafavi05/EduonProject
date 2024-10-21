@@ -1,2 +1,10 @@
 Options -MultiViews -Indexes
 php_value auto_prepend_file "C:\xampp\htdocs\public_html\vendor\autoload.php"
+
+AddType font/woff .woff
+AddType font/woff2 .woff2
+AddType application/font-woff .woff
+AddType application/font-woff2 .woff2
+AddType font/ttf .ttf
+AddType application/vnd.ms-fontobject .eot
+AddType font/otf .otf

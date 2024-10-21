@@ -12,7 +12,9 @@ class ControllerGenerator
         if (!file_exists(Config::CONTROLLER_DIR)) {
             mkdir(Config::CONTROLLER_DIR, 0777, true);
         }
-        $controllerName = ucfirst($controllerName) . "Controller";
+
+        $rawName = ucfirst($controllerName);
+        $controllerName = ucfirst($rawName) . "Controller";
 
         $controllerFile = Config::CONTROLLER_DIR . $controllerName . '.php';
 
@@ -25,17 +27,19 @@ class ControllerGenerator
         $controllerTemplate = <<<EOT
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Controllers;
 
 use App\Http\BaseController;
+use App\Http\Request;
 use App\Models\DB;
 use App\Utilities\Session;
+use Carbon\Carbon;
 
-class $controllerName
+class $controllerName extends BaseController
 {
     public function index()
     {
-        
+        \$this->view('$rawName/index', ['']);
     }
 }
 
@@ -58,12 +62,13 @@ EOT;
         $indexFile = $resourceDir . '/index.php';
         $indexTemplate = <<<EOT
 <?php
-\$content = "
+
+\$content = '
 
 <h1>Welcome to $controllerName index page</h1>
 <p>This is the default view for the $controllerName.</p>
 
-";
+';
 
 \$this->layout(\$content);
 EOT;

@@ -6,5 +6,8 @@
     },
     "scripts": {
         "generate": "php generate"
+    },
+    "require": {
+        "nesbot/carbon": "^3.8"
     }
 }

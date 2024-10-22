@@ -72,13 +72,13 @@
                                     <form class="newsletter-form" data-toggle="validator">
                                         <input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required="" autocomplete="off">
                                         <button class="default-btn" type="submit">
-                                            Subscribe Now
+                                            همین الان ثبت نام کنید
                                         </button>
                                         <div id="validator-newsletter-2" class="form-result"></div>
                                         <div class="agree-label">
                                             <input type="checkbox" id="chb1">
                                             <label for="chb1">
-                                                Do not show this popup again
+                                                این صفحه را دوباره نشان نده.
                                             </label>
                                         </div>
                                     </form>
@@ -112,121 +112,121 @@
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
                                 <a href="../#" class="nav-link active">
-                                    Home
+                                    خانه
                                     <i class="bx bx-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="../index" class="nav-link active">Home One</a>
+                                        <a href="../index" class="nav-link active">خانه 1</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../index-2" class="nav-link">Home Two</a>
+                                        <a href="../index-2" class="nav-link">خانه 2</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../index-3" class="nav-link">Home Three</a>
+                                        <a href="../index-3" class="nav-link">خانه 3</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="../#" class="nav-link">
-                                    Courses
+                                    دوره ها
                                     <i class="bx bx-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="../courses" class="nav-link">Courses</a>
+                                        <a href="../courses" class="nav-link">دوره ها</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../single-course" class="nav-link">Single Course</a>
+                                        <a href="../single-course" class="nav-link">تک دوره</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="../#" class="nav-link">
-                                    Pages
+                                    صفحه ها
                                     <i class="bx bx-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="../about" class="nav-link">About</a>
+                                        <a href="../about" class="nav-link">درباره ما</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../feedback" class="nav-link">Feedback</a>
+                                        <a href="../feedback" class="nav-link">باز خورد</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="../#" class="nav-link">
-                                            Events
+                                            رویداد ها
                                             <i class="bx bx-chevron-right"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item">
-                                                <a href="../events" class="nav-link">Events</a>
+                                                <a href="../events" class="nav-link">رویداد ها</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="../single-event" class="nav-link">Single Event</a>
+                                                <a href="../single-event" class="nav-link">تک رویداد ها</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../instructors" class="nav-link">Instructors</a>
+                                        <a href="../instructors" class="nav-link">استاد ها</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="../#" class="nav-link">
-                                            User
+                                            کاربر
                                             <i class="bx bx-chevron-right"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item">
-                                                <a href="../myaccount" class="nav-link">My Account</a>
+                                                <a href="../myaccount" class="nav-link">اکانت من</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="../login" class="nav-link">Log In</a>
+                                                <a href="../login" class="nav-link">ورود</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="../registration" class="nav-link">Registration</a>
+                                                <a href="../registration" class="nav-link">ثبت نام</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="../recover-password" class="nav-link">Recover Password</a>
+                                                <a href="../recover-password" class="nav-link">ریکاور پسورد</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../gallery" class="nav-link">Gallery</a>
+                                        <a href="../gallery" class="nav-link">گالری</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../faq" class="nav-link">FAQ</a>
+                                        <a href="../faq" class="nav-link">سوال های پر تکرار</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../privacy-policy" class="nav-link">Privacy Policy</a>
+                                        <a href="../privacy-policy" class="nav-link">سیاست حفظ حریم خصوصی</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../terms-conditions" class="nav-link">Terms & Conditions</a>
+                                        <a href="../terms-conditions" class="nav-link">قوانین و مقررات</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../coming-soon" class="nav-link">Coming Soon</a>
+                                        <a href="../coming-soon" class="nav-link">به زودی...</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../404" class="nav-link">404 Error Page</a>
+                                        <a href="../404" class="nav-link">404 پیدا نشد</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="../#" class="nav-link">
-                                    Shop
+                                    خرید
                                     <i class="bx bx-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="../shop" class="nav-link">Shop</a>
+                                        <a href="../shop" class="nav-link">خرید</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../cart" class="nav-link">Cart</a>
+                                        <a href="../cart" class="nav-link">سبد خرید</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../checkout" class="nav-link">Checkout</a>
+                                        <a href="../checkout" class="nav-link">ثبت سفارش</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../single-product" class="nav-link">Single Product</a>
+                                        <a href="../single-product" class="nav-link">تک محصول</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="../wishlist" class="nav-link">Wishlist</a>
@@ -235,29 +235,29 @@
                             </li>
                             <li class="nav-item">
                                 <a href="../#" class="nav-link">
-                                    Blog
+                                    بلاگ
                                     <i class="bx bx-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="../blog-column-one" class="nav-link">Blog Column One</a>
+                                        <a href="../blog-column-one" class="nav-link">ردیف 1 بلاگ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../blog-column-two" class="nav-link">Blog Column Two</a>
+                                        <a href="../blog-column-two" class="nav-link">ردیف 2 بلاگ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../blog-column-three" class="nav-link">Blog Column Three</a>
+                                        <a href="../blog-column-three" class="nav-link">ردیف 3 بلاگ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../blog-left-sidebar" class="nav-link">Blog Left Sidebar</a>
+                                        <a href="../blog-left-sidebar" class="nav-link">ساید بار بلاگ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../single-blog" class="nav-link">Single Blog</a>
+                                        <a href="../single-blog" class="nav-link">تک بلاگ</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="../contact" class="nav-link">Contact</a>
+                                <a href="../contact" class="nav-link">تماس با ما</a>
                             </li>
                         </ul>
 
@@ -283,9 +283,9 @@
                             <!-- the spot -->
                             <div class="register">
                                 <a href="../myaccount" class="default-btn">
-                                   <?php 
-                                    echo "{{userId}}";
-                                   ?>
+                                    <?php
+                                    echo "{{loginBtn}}";
+                                    ?>
                                 </a>
                             </div>
                         </div>
@@ -325,10 +325,10 @@
                                     <span>0</span>
                                 </a>
                             </div>
-                            
+
                             <div class="register">
                                 <a href="../myaccount" class="default-btn">
-                                    Login / Register
+                                    {{loginBtn}}
                                 </a>
                             </div>
                         </div>
@@ -346,11 +346,11 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-widget">
-                        <h3>Find Us</h3>
+                        <h3>ما را پیدا کنید</h3>
                         <ul class="address">
                             <li class="location">
                                 <i class="bx bxs-location-plus"></i>
-                                6890 Blvd, The Bronx, NY 1058 New York, USA
+                                اصفهان، خیابان 1، کوچه، پلاک
                             </li>
                             <li>
                                 <i class="bx bxs-envelope"></i>
@@ -359,59 +359,59 @@
                             </li>
                             <li>
                                 <i class="bx bxs-phone-call"></i>
-                                <a href="tel:+1(514)312-5678">+1 (514) 312-5678</a>
-                                <a href="tel:+1(514)312-6688">+1 (514) 312-6688</a>
+                                <a href="tel:+1(514)312-5678">+98 (031) 312-5678</a>
+                                <a href="tel:+1(514)312-6688">+98 (031) 312-6688</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-widget">
-                        <h3>Useful links</h3>
+                        <h3>لینک های پر کاربرد</h3>
                         <ul class="link">
                             <li>
-                                <a href="../courses">All Courses</a>
+                                <a href="../courses">تمام دوره ها</a>
                             </li>
                             <li>
-                                <a href="../about">About us</a>
+                                <a href="../about">درباره ما</a>
                             </li>
                             <li>
-                                <a href="../faq">Help (FAQ)</a>
+                                <a href="../faq">Help</a>
                             </li>
                             <li>
-                                <a href="../terms-conditions">Terms & Conditions</a>
+                                <a href="../terms-conditions">سیاست حفض حریم خصوصی</a>
                             </li>
                             <li>
-                                <a href="../privacy-policy">Privacy Policy</a>
+                                <a href="../privacy-policy">قوانین و مقررات</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-widget">
-                        <h3>Top online courses</h3>
+                        <h3>بهترین دوره های آنلاین</h3>
                         <ul class="link">
                             <li>
-                                <a href="../courses">AI for everyone</a>
+                                <a href="../courses">AI برای همه</a>
                             </li>
                             <li>
-                                <a href="../courses">Networks and deep learning</a>
+                                <a href="../courses">شبکه و deep learning</a>
                             </li>
                             <li>
-                                <a href="../courses">Learning with python</a>
+                                <a href="../courses">آموزش با python</a>
                             </li>
                             <li>
-                                <a href="../courses">Financial markets</a>
+                                <a href="../courses">بازار های مالی</a>
                             </li>
                             <li>
-                                <a href="../courses">Speak English professionally</a>
+                                <a href="../courses">آموزش زبان انگلیسی</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-widget">
-                        <h3>Popular subjects</h3>
+                        <h3>موضوع های محبوب</h3>
                         <ul class="link">
                             <li>
                                 <a href="../courses">Data science</a>
@@ -420,13 +420,13 @@
                                 <a href="../courses">Computer science</a>
                             </li>
                             <li>
-                                <a href="../courses">Business and Management</a>
+                                <a href="../courses">بیزینس و مدیریت</a>
                             </li>
                             <li>
-                                <a href="../courses">Business and Management</a>
+                                <a href="../courses">بیزینس و مدیریت2</a>
                             </li>
                             <li>
-                                <a href="../courses">Nature & Environment</a>
+                                <a href="../courses">طبیعت و محیط زیست</a>
                             </li>
                         </ul>
                     </div>
@@ -439,7 +439,7 @@
     <footer class="footer-bottom-area">
         <div class="container">
             <div class="copyright-wrap">
-                <p>© Eduon is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                <p>© تمامی حقوق این سایت محفوض است <a href="https://hibootstrap.com/" target="_blank">پارسا صفوی</a></p>
             </div>
         </div>
     </footer>
@@ -482,7 +482,7 @@
     <script src="/public_html/public/scripts/ajaxchimp.min.js"></script>
 
     <script src="/public_html/public/scripts/custom.js"></script>
-    
+
     <script src="/public_html/public/scripts/myscript.js"></script>
 
 </body>

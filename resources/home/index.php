@@ -1,4 +1,5 @@
 <?php
+
 use App\Utilities\Session;
 
 Session::start();
@@ -8,14 +9,16 @@ $content = '
     <div class="row align-items-center">
         <div class="col-lg-6">
             <div class="banner-content">
-                <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Study a recognized
-                    qualification with the online learning experts</h1>
-                <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.</p>
+                <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
+                    کسب صلاحیت با کارشناسان آموزش آنلاین           
+                </h1>
+                <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">
+                    لورم ایپسوم متن ساختگی با 
+                    .تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                     </p>
                 <a href="courses.html" class="default-btn wow animate__animated animate__fadeInLeft"
                     data-wow-delay="0.9s">
-                    View Courses
+                    دوره ها
                 </a>
             </div>
         </div>
@@ -103,8 +106,9 @@ $content = '
                     <i class="flaticon-skills"></i>
                 </div>
                 <h3>Learn the latest skills</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    sis.</p>
+                <p>لورم ایپسوم متن ساختگی با 
+                    تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                     چاپگرها و متون بلکه روزنام.</p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6">
@@ -114,8 +118,9 @@ $content = '
                     <i class="flaticon-career"></i>
                 </div>
                 <h3>Get ready for a career</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    sis.</p>
+                <p>لورم ایپسوم متن ساختگی با 
+                    تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                     چاپگرها و متون بلکه روزنام.</p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6">
@@ -125,8 +130,9 @@ $content = '
                     <i class="flaticon-certificate"></i>
                 </div>
                 <h3>Earn a certificate or degree</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    sis.</p>
+                <p>لورم ایپسوم متن ساختگی با 
+                    تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                     چاپگرها و متون بلکه روزنام.</p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6">
@@ -136,8 +142,9 @@ $content = '
                     <i class="flaticon-group"></i>
                 </div>
                 <h3>Upskill your organization</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    sis.</p>
+                <p>لورم ایپسوم متن ساختگی با 
+                    تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                     چاپگرها و متون بلکه روزنام.</p>
             </div>
         </div>
     </div>
@@ -155,36 +162,38 @@ $content = '
         </div>
         <div class="col-lg-6">
             <div class="education-content ptb-100">
-                <span class="top-title">Education For All</span>
-                <h2>Why create an online course with <span>EDUON</span>?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                <span class="top-title">آموزش برای همه</span>
+                <h2>چرا در باید در دوره های<span> EDUON </span>شرکت کنید؟</h2>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم 
+                    از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                     و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                      نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                      زیادی در شصت و سه درصد گذشته حال و آیند.</p>
                 </p>
                 <ul>
                     <li>
                         <i class="bx bx-check"></i>
-                        Unlimited everything
+                        بی نهایت از همه چی
                     </li>
                     <li>
                         <i class="bx bx-check"></i>
-                        No transaction fees
+                        بدون هزینه اضافه
                     </li>
                     <li>
                         <i class="bx bx-check"></i>
-                        No technical headaches
+                        بدون دردسر های تکنیکی
                     </li>
                     <li>
                         <i class="bx bx-check"></i>
-                        World-class support from real people
+                        بالاترین سطح پشتیبانی
                     </li>
                     <li>
                         <i class="bx bx-check"></i>
-                        Free migrations
+                        انتقال رایگان
                     </li>
                 </ul>
-                <a href="courses.html" class="default-btn">
-                    View Courses
+                <a href="../courses/index" class="default-btn">
+                    دوره ها
                 </a>
             </div>
         </div>
@@ -196,8 +205,8 @@ $content = '
 <section class="courses-area pt-100 pb-70">
 <div class="container">
     <div class="section-title">
-        <span>Popular Courses</span>
-        <h2>Select a course to find out more</h2>
+        <span>دوره های محبوب    </span>
+        <h2>برای اطلاعات بیشتر یک دوره انتخاب کنید</h2>
     </div>
     <div class="row">
         <div class="col-lg-4 col-md-6">
@@ -463,7 +472,7 @@ $content = '
                         <span class="target">%</span>
                     </h2>
                 </div>
-                <p>Success rate</p>
+                <p>درصد موفقیت</p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6">
@@ -474,7 +483,7 @@ $content = '
                         <span class="odometer" data-count="5253">00</span>
                     </h2>
                 </div>
-                <p>Students enrolled</p>
+                <p>تعداد دانشجو ها</p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6">
@@ -485,7 +494,7 @@ $content = '
                         <span class="odometer" data-count="325">00</span>
                     </h2>
                 </div>
-                <p>Certified teachers</p>
+                <p>استاد های تایید شده</p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6">
@@ -496,7 +505,7 @@ $content = '
                         <span class="odometer" data-count="565">00</span>
                     </h2>
                 </div>
-                <p>Complete courses</p>
+                <p>دوره های کامل</p>
             </div>
         </div>
     </div>
@@ -510,20 +519,20 @@ $content = '
         <div class="col-lg-5">
             <div class="enroll-wrap">
                 <form class="courses-form">
-                    <span>Need Any Courses</span>
-                    <h3>Enroll Now</h3>
+                    <span>به دوره ای نیاز دارید؟</span>
+                    <h3>همین الان ثبت نام کنید</h3>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="Name" placeholder="Your name">
+                        <input type="text" class="form-control" id="Name" placeholder="اسم و فامیل">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Your email">
+                        <input type="text" class="form-control" id="email" placeholder="ایمیل">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="Number" placeholder="Phone Number">
+                        <input type="text" class="form-control" id="Number" placeholder="شماره تلفن">
                     </div>
                     <div class="form-group">
                         <select>
-                            <option value="">Courses Type</option>
+                            <option value="">نوع دوره</option>
                             <option value="">Courses Type 1</option>
                             <option value="">Courses Type 2</option>
                             <option value="">Courses Type 3</option>
@@ -533,7 +542,7 @@ $content = '
                         </select>
                     </div>
                     <button type="submit" class="default-btn">
-                        Submit
+                        ثبت نام
                     </button>
                 </form>
             </div>
@@ -551,8 +560,8 @@ $content = '
 <section class="teachers-area ebeef5-bg-color pt-100">
 <div class="container">
     <div class="section-title">
-        <span>Our Teachers</span>
-        <h2>Our international teachers</h2>
+        <span>استاد های ما</span>
+        <h2>استاد های بین المللی ما</h2>
     </div>
     <div class="row">
         <div class="col-lg-3 col-sm-6">
@@ -655,8 +664,8 @@ $content = '
 <section class="event-area ptb-70">
 <div class="container">
     <div class="section-title">
-        <span>Education Events</span>
-        <h2>Upcoming events</h2>
+        <span>رویداد های آموزشی</span>
+        <h2>رویداد های پیش رو</h2>
     </div>
     <div class="row">
         <div class="col-lg-6 col-sm-6">
@@ -785,8 +794,8 @@ $content = '
 <section class="feedback-area f5f6fa-bg-color ptb-100">
 <div class="container">
     <div class="section-title">
-        <span>Feedback</span>
-        <h2>What students say</h2>
+        <span>بازخورد</span>
+        <h2>دانشجو های ما چه میگند</h2>
     </div>
     <div class="feedback-slider owl-theme owl-carousel">
         <div class="feedback-item">
@@ -835,8 +844,8 @@ $content = '
     <div class="row align-items-center">
         <div class="col-lg-4">
             <div class="discover-content">
-                <span class="top-title">Discover Courses</span>
-                <h2>Online training with on education</h2>
+                <span class="top-title">دوره های را کشف کنید</span>
+                <h2>تحصیلات آنلاین با ما</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
                     viverra maecenas.</p>
@@ -1073,8 +1082,8 @@ $content = '
 <section class="news-area f5f6fa-bg-color pt-100 pb-70">
 <div class="container">
     <div class="section-title">
-        <span>Our News</span>
-        <h2>Explore recent news</h2>
+        <span>اخبار های ما</span>
+        <h2>در اخبار های ما بگردید</h2>
     </div>
     <div class="row">
         <div class="col-lg-6">

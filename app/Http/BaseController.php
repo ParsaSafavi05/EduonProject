@@ -34,7 +34,7 @@ class BaseController
                 ->where("user_id", "=", $userId)
                 ->get();
 
-            $username = $user[0]['username'];
+            $username = $user[0]['fullname'];
 
             $replacements = [
                 '{{loginBtn}}' => $username,

@@ -13,9 +13,11 @@ class DB
     private $table;
     private $select = '*';
     private $where = [];
+    private $orWhere = [];
     private $bindings = [];
     private $orderBy = '';
     private $limit = '';
+    private $join = [];
 
     // Database configuration
     private static $host = Config::DB_HOST;
@@ -66,10 +68,26 @@ class DB
 
     public function where($column, $operator, $value)
     {
-        $this->where[] = "$column $operator :$column";
-        $this->bindings[$column] = $value;
+        $placeholder = ":{$column}_" . count($this->bindings);
+        $this->where[] = "$column $operator $placeholder";
+        $this->bindings[$placeholder] = $value; // Bind the value to the unique placeholder
         return $this;
     }
+
+    public function orWhere($column, $operator, $value)
+    {
+        $placeholder = ":{$column}_or_" . count($this->bindings);
+        $this->orWhere[] = "$column $operator $placeholder";
+        $this->bindings[$placeholder] = $value; // Bind the value to the unique placeholder
+        return $this;
+    }
+
+    public function join($table, $first, $operator, $second, $type = 'INNER')
+    {
+        $this->join[] = "$type JOIN $table ON $first $operator $second";
+        return $this;
+    }
+
 
     public function orderBy($column, $direction = 'ASC')
     {
@@ -87,18 +105,67 @@ class DB
     {
         try {
             $sql = "SELECT {$this->select} FROM {$this->table}";
-            if (!empty($this->where)) {
-                $sql .= " WHERE " . implode(" AND ", $this->where);
+
+            if (!empty($this->join)) {
+                $sql .= ' ' . implode(' ', $this->join);
+            }    
+
+            if (!empty($this->where) || !empty($this->orWhere)) {
+                $sql .= " WHERE ";
+
+                $whereClause = !empty($this->where) ? implode(" AND ", $this->where) : '';
+                $orWhereClause = !empty($this->orWhere) ? implode(" OR ", $this->orWhere) : '';
+
+                if (!empty($whereClause) && !empty($orWhereClause)) {
+                    $sql .= "($whereClause OR $orWhereClause)";
+                } elseif (!empty($whereClause)) {
+                    $sql .= $whereClause;
+                } elseif (!empty($orWhereClause)) {
+                    $sql .= $orWhereClause;
+                }
             }
+
             $sql .= $this->orderBy . $this->limit;
+
             $stmt = self::getInstance()->prepare($sql);
             $stmt->execute($this->bindings);
+
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
             echo "Query failed: " . $exception->getMessage();
             return false;
         }
     }
+
+
+    public function getQuery()
+    {
+        $sql = "SELECT {$this->select} FROM {$this->table}";
+
+        if (!empty($this->join)) {
+            $sql .= ' ' . implode(' ', $this->join);
+        }
+
+        if (!empty($this->where) || !empty($this->orWhere)) {
+            $sql .= " WHERE ";
+
+            $whereClause = !empty($this->where) ? implode(" AND ", $this->where) : '';
+            $orWhereClause = !empty($this->orWhere) ? implode(" OR ", $this->orWhere) : '';
+
+            if (!empty($whereClause) && !empty($orWhereClause)) {
+                $sql .= "($whereClause OR $orWhereClause)";
+            } elseif (!empty($whereClause)) {
+                $sql .= $whereClause;
+            } elseif (!empty($orWhereClause)) {
+                $sql .= $orWhereClause;
+            }
+        }
+
+        $sql .= $this->orderBy . $this->limit;
+
+        return $sql;
+    }
+
 
 
     public function first()

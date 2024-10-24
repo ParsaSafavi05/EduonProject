@@ -113,19 +113,7 @@
                             <li class="nav-item">
                                 <a href="../#" class="nav-link active">
                                     خانه
-                                    <i class="bx bx-chevron-down"></i>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="../index" class="nav-link active">خانه 1</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../index-2" class="nav-link">خانه 2</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../index-3" class="nav-link">خانه 3</a>
-                                    </li>
-                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="../#" class="nav-link">

@@ -795,7 +795,7 @@ $content = '
 <div class="container">
     <div class="section-title">
         <span>بازخورد</span>
-        <h2>دانشجو های ما چه میگند</h2>
+        <h2>دانشجو های ما چه میگویند</h2>
     </div>
     <div class="feedback-slider owl-theme owl-carousel">
         <div class="feedback-item">

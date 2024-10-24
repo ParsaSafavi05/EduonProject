@@ -7,14 +7,14 @@ $content = '
 <div class="page-title-area bg-10">
 <div class="container">
     <div class="page-title-content">
-        <h2>Registration</h2>
+        <h2>ثبت نام</h2>
         <ul>
             <li>
                 <a href="index.html">
-                    Home
+                    خانه
                 </a>
             </li>
-            <li class="active">Registration</li>
+            <li class="active">ثبت نام</li>
         </ul>
     </div>
 </div>
@@ -33,32 +33,32 @@ if ($message = Session::flash('Error')) {
 
 $content .= '
 <div class="section-title">
-            <h2>Registration</h2>
+            <h2>ثبت نام</h2>
         </div>
         <div class="contact-form-action">
         <form method="post" action="registerUser">
                 <div class="row">
                     <div class="col-12">
                         <div class="form-group">
-                            <label>Full name</label>
+                            <label>نام و نام خانوادگی</label>
                             <input class="form-control" type="text" name="name">
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group">
-                            <label>Email address</label>
+                            <label>آدرس ایمیل</label>
                             <input class="form-control" type="email" name="email">
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group">
-                            <label>Mobile no.</label>
+                            <label>شماره تلفن</label>
                             <input class="form-control" type="number" name="phone_number">
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group">
-                            <label>Password</label>
+                            <label>رمز عبور</label>
                             <input class="form-control" type="text" name="password">
                         </div>
                     </div>
@@ -66,17 +66,17 @@ $content .= '
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <button class="default-btn register" type="submit">
-                                    Register Now
+                                    وارد شوید
                                 </button>
                             </div>
                             <div class="col-lg-6 text-right">
                                 <input id="remember" type="checkbox">
-                                <label for="remember">Show password ?</label>
+                                <label for="remember">نمایش رمز عبور</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <p>Have an account? <a href="../login">Login Now!</a></p>
+                        <p>حساب کاربری دارید؟ <a href="../login">وارد شوید!</a></p>
                     </div>
                 </div>
             </form>

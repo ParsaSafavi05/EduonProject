@@ -13,7 +13,7 @@ class CoursesController extends BaseController
     public function index()
     {
         $courses = DB::table("courses")
-        ->join('category','courses.course_category','=','category.category_id')
+        ->join('categories','courses.course_category','=','categories.category_id')
         ->get();
 
         $this->view('Courses/index', ['courses' => $courses]);
@@ -38,6 +38,25 @@ class CoursesController extends BaseController
     public function category()
     {
         
+    }
+
+    public function viewcourse()
+    {
+        $course_id = Request::getParam('id');
+        $course = DB::table('courses')
+        ->join('categories','courses.course_category','=','categories.category_id')
+        ->join('teachers','courses.course_teacher','=','teachers.teacher_id')
+        ->join('gallery','courses.course_image','=','gallery.image_id')
+        ->where('course_id','=', $course_id)
+        ->get();
+
+        if ($course) {
+            $this->view('courses/viewcourse', ['course' =>$course]);
+        }
+        else{
+            $this->redirect('courses/index', []);
+        }
+
     }
 }
 

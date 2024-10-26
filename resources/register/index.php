@@ -66,7 +66,7 @@ $content .= '
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <button class="default-btn register" type="submit">
-                                    وارد شوید
+                                    ثبت نام
                                 </button>
                             </div>
                             <div class="col-lg-6 text-right">

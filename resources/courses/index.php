@@ -64,7 +64,7 @@ foreach ($courses as $course) {
     }
     $content .= "<div class='col-lg-4 col-md-6'>
                     <div class='single-course'>
-                        <a href='single-course.html'>
+                        <a href='viewcourse?id=".$course['course_id']."'>
                             <img src='../../public/img/course-img/course-img-1.jpg' alt='Image'>
                         </a>
                         <div class='course-content'>

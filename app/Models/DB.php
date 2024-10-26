@@ -108,7 +108,7 @@ class DB
 
             if (!empty($this->join)) {
                 $sql .= ' ' . implode(' ', $this->join);
-            }    
+            }
 
             if (!empty($this->where) || !empty($this->orWhere)) {
                 $sql .= " WHERE ";
@@ -175,20 +175,43 @@ class DB
         return $results ? $results[0] : null;
     }
 
-    public function insert($data)
+
+
+
+    public function insert(array $data)
     {
         try {
-            $columns = implode(", ", array_keys($data));
-            $placeholders = ":" . implode(", :", array_keys($data));
-            $sql = "INSERT INTO {$this->table} ($columns) VALUES ($placeholders)";
-            $stmt = self::getInstance()->prepare($sql);
-            $stmt->execute($data);
-            return self::getInstance()->lastInsertId();
+            // Extract columns and values from the associative array
+            $fields = array_keys($data);
+            $values = array_values($data);
+    
+            // Convert fields array to a comma-separated string
+            $fieldString = implode(', ', $fields);
+    
+            // Prepare placeholders for each data value
+            $placeholders = implode(', ', array_fill(0, count($values), '?'));
+    
+            // Construct the SQL query
+            $sql = "INSERT INTO {$this->table} ({$fieldString}) VALUES ({$placeholders})";
+    
+            // Prepare the statement
+            $stmt = self::$instance->prepare($sql);
+    
+            // Execute with data values
+            $stmt->execute($values);
+    
+            return true;
         } catch (PDOException $exception) {
-            echo "Insert failed: " . $exception->getMessage();
+            echo "Insertion failed: " . $exception->getMessage();
             return false;
         }
     }
+    
+
+
+
+
+
 
     public function update($data)
     {

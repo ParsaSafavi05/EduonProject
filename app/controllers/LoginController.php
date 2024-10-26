@@ -30,7 +30,7 @@ class LoginController extends BaseController
         $hashedpassword = md5($password);
 
         $user = DB::table('users')
-            ->where('email', '=', $email_phone)
+            ->where('email_address', '=', $email_phone)
             ->get();
         if (!isset($email_phone) || empty($email_phone)) {
             Session::flash('Error', 'ایمیل خالی است');
@@ -40,7 +40,7 @@ class LoginController extends BaseController
                 Session::flash('Error', 'رمز عبور خالی است');
                 $this->redirect('login/index', []);
             } else {
-                if (count($user) == 0) {
+                if ($user == false) {
                     Session::flash('Error', 'ایمیل یا رمز عبور نادرست است');
                     $this->redirect('login/index', []);
                 } else {

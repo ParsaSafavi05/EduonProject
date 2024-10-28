@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use App\Http\BaseController;
 use App\Http\Config;
+use App\Utilities\Redirect;
 
 class HandleNotFoundMiddleware extends BaseController
 {
@@ -26,6 +27,7 @@ class HandleNotFoundMiddleware extends BaseController
         // Handle a 404 error in a centralized way
         http_response_code(404);
         require_once Config::RESOURCES_PATH . 'errors/404.php';
-        exit(); // Stop further execution
+        $this->redirect('errors/404');
+        exit(); 
     }
 }

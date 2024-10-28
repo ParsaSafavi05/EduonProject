@@ -5,6 +5,7 @@ namespace App\Http;
 use App\Http\Config;
 use App\Http\Middleware\HandleNotFoundMiddleware;
 use App\Utilities\Redirect;
+use App\Http\Request;
 
 class Kernel
 {
@@ -127,6 +128,7 @@ class Kernel
         $middleware->handle(null, function () {
             return false;
         });
+        Redirect::redirect('error/404');
     }
 
     protected function handleError()

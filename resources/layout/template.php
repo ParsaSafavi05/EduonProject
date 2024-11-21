@@ -114,23 +114,14 @@
                     <div class="collapse navbar-collapse mean-menu">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a href="../#" class="nav-link active">
+                                <a href="../home" class="nav-link active">
                                     خانه
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="../#" class="nav-link">
+                                <a href="../courses" class="nav-link">
                                     دوره ها
-                                    <i class="bx bx-chevron-down"></i>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="../courses" class="nav-link">دوره ها</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../single-course" class="nav-link">تک دوره</a>
-                                    </li>
-                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="../#" class="nav-link">
@@ -145,59 +136,9 @@
                                         <a href="../feedback" class="nav-link">باز خورد</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../#" class="nav-link">
+                                        <a href="../events" class="nav-link">
                                             رویداد ها
-                                            <i class="bx bx-chevron-right"></i>
                                         </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="../events" class="nav-link">رویداد ها</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="../single-event" class="nav-link">تک رویداد ها</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../instructors" class="nav-link">استاد ها</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../#" class="nav-link">
-                                            کاربر
-                                            <i class="bx bx-chevron-right"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="../myaccount" class="nav-link">اکانت من</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="../login" class="nav-link">ورود</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="../registration" class="nav-link">ثبت نام</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="../recover-password" class="nav-link">ریکاور پسورد</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../gallery" class="nav-link">گالری</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../faq" class="nav-link">سوال های پر تکرار</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../privacy-policy" class="nav-link">سیاست حفظ حریم خصوصی</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../terms-conditions" class="nav-link">قوانین و مقررات</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../coming-soon" class="nav-link">به زودی...</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../404" class="nav-link">404 پیدا نشد</a>
                                     </li>
                                 </ul>
                             </li>

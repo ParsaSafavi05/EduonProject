@@ -12,6 +12,11 @@ class InstructorsController extends BaseController
 {
     public function index()
     {
-        $this->view('Instructors/index', ['']);
+
+        $teachers = DB::table('teachers')
+        ->join('fields', 'teachers.teacher_field', '=', 'fields.field_id')
+        ->get();
+
+        $this->view('Instructors/index', ['teachers' => $teachers]);
     }
 }

@@ -168,12 +168,18 @@ class DB
 
 
 
-    public function first()
-    {
-        $this->limit(1);
-        $results = $this->get();
-        return $results ? $results[0] : null;
+    public function first($count = 1)
+{
+    $this->limit($count); 
+    $results = $this->get(); 
+
+    if (!$results) {
+        return null;
     }
+
+    return $count === 1 ? $results[0] : array_slice($results, 0, $count);
+}
+
 
 
 

@@ -31,7 +31,7 @@ $content = '
 
     <ul class="social-wrap">
         <li class="follow-us">
-            Follow Us:
+            ما را دنبال کنید
         </li>
         <li>
             <a href="https://www.twitter.com/" target="_blank">
@@ -95,8 +95,8 @@ $content = '
 <section class="achieve-area f5f6fa-bg-color pt-100 pb-70">
 <div class="container">
     <div class="section-title">
-        <span>Leader In Education</span>
-        <h2>Achieve your goals</h2>
+        <span>بهترین در آموزش</span>
+        <h2>به هدف هات برس</h2>
     </div>
     <div class="row">
         <div class="col-lg-3 col-sm-6">

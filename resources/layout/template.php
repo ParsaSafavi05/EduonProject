@@ -26,14 +26,17 @@
 
     <link rel="stylesheet" href="/public_html/public/styles/odometer.min.css">
 
+    
+    <link rel="stylesheet" href="/public_html/public/styles/dark.css">
+    
+    <link rel="stylesheet" href="/public_html/public/styles/responsive.css">
+    
+    <link rel="icon" type="image/png" href="/public_html/public/img/favicon.png">
+    
     <link rel="stylesheet" href="/public_html/public/styles/style.css">
 
-    <link rel="stylesheet" href="/public_html/public/styles/dark.css">
-
-    <link rel="stylesheet" href="/public_html/public/styles/responsive.css">
-
-    <link rel="icon" type="image/png" href="/public_html/public/img/favicon.png">
-
+    <link rel="stylesheet" href="/public_html/public/styles/custom.css">
+    
     <title>Eduon - Online Courses & Training HTML Template</title>
 </head>
 

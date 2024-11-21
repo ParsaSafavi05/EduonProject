@@ -23,19 +23,19 @@ $content = "
             <div class='row'>
                 <div class='col-lg-8'>
                     <div class='single-course-content'>
-                        <h3>".$course[0]['course_title']."</h3>
+                        <h3>" . $course[0]['course_title'] . "</h3>
                         <div class='row align-items-center'>
                             <div class='col-lg-4 col-sm-4'>
                                 <div class='course-rating'>
-                                    <img src='../../public/img/single-course/rating-img-1.jpg' alt='Image'>
+                                    <img src='" . $course[0]['teacher_image'] . "' alt='Image'>
                                     <h4><a href='instructors.html'>مدرس</a></h4>
-                                    <span>".$course[0]['teacher_fullname']."</span>
+                                    <span>" . $course[0]['teacher_fullname'] . "</span>
                                 </div>
                             </div>
                             <div class='col-lg-4 col-sm-4'>
                                 <div class='course-rating pl-0 text-center'>
                                     <h4>دسته بندی:</h4>
-                                    <span>".$course[0]['category_name']."</span>
+                                    <span>" . $course[0]['category_name'] . "</span>
                                 </div>
                             </div>
                             <div class='col-lg-4 col-sm-4'>
@@ -54,66 +54,49 @@ $content = "
                                 </div>
                             </div>
                         </div>
-                        <img src='../../public/img/single-course/".$course[0]['image_url']."' alt='Image'>
+                        <img src='../../public/img/single-course/" . $course[0]['image_url'] . "' alt='Image'>
                     </div>
                     <div class='tab single-course-tab'>
                         <ul class='tabs'>
                             <li>
-                                <a href='javascript:;'>Overview</a>
+                                <a href='javascript:;'>درباره دوره</a>
                             </li>
                             <li>
-                                <a href='javascript:;'>Curriculum</a>
+                                <a href='javascript:;'>دروس دوره</a>
                             </li>
                             <li>
-                                <a href='javascript:;'> Instructor</a>
+                                <a href='javascript:;'> استاد دوره</a>
                             </li>
                             <li>
-                                <a href='javascript:;'>Reviews</a>
+                                <a href='javascript:;'>نظرات</a>
                             </li>
                         </ul>
                         <div class='tab_content'>
                             <div class='tabs_item'>
                                 <h3>توضیحات دوره</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas When an unknown printer took a galley of
-                                    type and scrambled it to make a type specimen book. It has svived not only five
-                                    centuries, but also the leap into electronic typesetting, remaining essentially.</p>
-                                <h3>Certification Online</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis sit amet,
-                                    consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                <p>" . $course[0]['course_description'] . "</p>
+                                <h3>مدرک های آنلاین</h3>
+                                <p>پس از گذراندن دوره های ما میتوانید به صورت آنلاین اقدام به دریافت مدرک کنید</p>
                                 <h3>چیز های که یاد میگیرید</h3>
-                                <ul class='course-list'>
+                                <ul class='course-list'>";
+
+foreach ($outcomes as $outcome) {
+    $content .= "
                                     <li>
-                                        <i class='bx bx-check'></i>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    </li>
-                                    <li>
-                                        <i class='bx bx-check'></i>
-                                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </li>
-                                    <li>
-                                        <i class='bx bx-check'></i>
-                                        Quis ipsum suspendisse ultrices gravida.
-                                    </li>
-                                    <li>
-                                        <i class='bx bx-check'></i>
-                                        Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                                    </li>
-                                </ul>
+                                        <i class='bx bx-check'></i>" .
+        $outcome['outcome_text']
+        . "</li>
+                                    ";
+}
+$content .= "</ul>
                                 <h3>این دوره برای چه کسانی است</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis sit amet,
-                                    consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                <p>" . $course[0]['course_audience'] . "</p>
                             </div>
                             <div class='tabs_item'>
                                 <div class='curriculum-content'>
-                                    <h3>Education introduction</h3>
+                                    <h3>معرفی دوره</h3>
                                     <div class='curriculum-list'>
-                                        <h4>Section 1</h4>
+                                        <h4>1 فصل</h4>
                                         <ul>
                                             <li>
                                                 <a href='instructors.html' class='meet-title'>
@@ -149,7 +132,7 @@ $content = "
                                         </ul>
                                     </div>
                                     <div class='curriculum-list'>
-                                        <h4>Section 2</h4>
+                                        <h4>فصل 2</h4>
                                         <ul>
                                             <li>
                                                 <a href='instructors.html' class='meet-title'>
@@ -183,31 +166,6 @@ $content = "
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class='curriculum-list'>
-                                        <h4>Section 3</h4>
-                                        <ul>
-                                            <li>
-                                                <a href='instructors.html' class='meet-title'>
-                                                    <i class='bx bx-right-arrow'></i>
-                                                    Video introduction
-                                                </a>
-                                                <a href='single-course.html' class='meet-time'>
-                                                    <span class='min'>30 min</span>
-                                                    <i class='bx bxs-lock-alt'></i>
-                                                </a>
-                                            </li>
-                                            <li class='transparent'>
-                                                <a href='instructors.html' class='meet-title'>
-                                                    <i class='bx bx-right-arrow'></i>
-                                                    Web module
-                                                </a>
-                                                <a href='single-course.html' class='meet-time'>
-                                                    <span class='min'>05 hours</span>
-                                                    <i class='bx bxs-lock-alt'></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                             <div class='tabs_item'>
@@ -215,17 +173,16 @@ $content = "
                                     <div class='row align-items-center'>
                                         <div class='col-lg-4'>
                                             <div class='advisor-img'>
-                                                <img src='../../public/img/instructor-img.jpg' alt='Image'>
+                                                <img src='" . $course[0]['teacher_image'] . "' alt='Image'>
                                             </div>
                                         </div>
                                         <div class='col-lg-8'>
                                             <div class='advisor-content'>
                                                 <a href='single-course.html'>
-                                                    <h3>Anna Dew</h3>
+                                                    <h3>" . $course[0]['teacher_fullname'] . "</h3>
                                                 </a>
-                                                <span>Agile Project Expert</span>
-                                                <p>Jone Smit is a celebrated photographer, author, and writer who brings
-                                                    passion to everything he does.</p>
+                                                <span>" . $course[0]['field_name'] . "</span>
+                                                <p>" . $course[0]['about_teacher'] . "</p>
                                                 <ul>
                                                     <li>
                                                         <a href='https://www.facebook.com/' target='_blank'>
@@ -255,25 +212,60 @@ $content = "
                             </div>
                             <div class='tabs_item'>
                                 <div class='review-content'>
-                                    <h3>Course rating</h3>
+                                    <h3>امتیاز دوره</h3>
                                     <ul class='rating-star'>
-                                        <li>
-                                            <i class='bx bxs-star'></i>
-                                        </li>
-                                        <li>
-                                            <i class='bx bxs-star'></i>
-                                        </li>
-                                        <li>
-                                            <i class='bx bxs-star'></i>
-                                        </li>
-                                        <li>
-                                            <i class='bx bxs-star'></i>
-                                        </li>
-                                        <li>
-                                            <i class='bx bxs-star'></i>
-                                        </li>
-                                    </ul>
-                                    <span>5.00 average based on 1 rating</span>
+                                    ";
+
+$review_amounts = count($reviews);
+$rating = 0; // Initialize the rating
+
+foreach ($reviews as $review) {
+    $rating += $review['rating'];
+}
+
+// Calculate the average rating
+$average_rating = $rating / $review_amounts;
+$average_rating = number_format($average_rating, 2);
+
+// Calculate full stars
+$fullStars = floor($average_rating);
+
+// Determine if a half star is needed
+$hasHalfStar = ($average_rating - $fullStars >= 0.5);
+
+// Calculate empty stars
+$emptyStars = 5 - $fullStars - ($hasHalfStar ? 1 : 0);
+
+// Add empty stars
+for ($i = 0; $i < $emptyStars; $i++) {
+    $content .= "
+    <li>
+        <i class='bx bx-star'></i> <!-- Empty star -->
+    </li>
+    ";
+}
+
+// Add half star if applicable
+if ($hasHalfStar) {
+    $content .= "
+    <li>
+        <i class='bx bxs-star-half'></i> <!-- Half star -->
+    </li>
+    ";
+}
+
+// Add full stars
+for ($i = 0; $i < $fullStars; $i++) {
+    $content .= "
+    <li>
+        <i class='bx bxs-star'></i> <!-- Full star -->
+    </li>
+    ";
+}
+
+
+$content .= "</ul>
+                                    <span>$average_rating با توجه به $review_amounts نظر</span>
                                     <div class='rating-bar-content'>
                                         <div class='single-bar'>
                                             <p class='start'>Star</p>
@@ -305,17 +297,25 @@ $content = "
                                         </div>
                                     </div>
                                     <div class='course-reviews-content'>
-                                        <h3>Reviews</h3>
+                                        <h3>نظرات</h3>
                                         <ul class='course-reviews'>
                                             <li>
-                                                <img src='../../public/img/course-reviews-img.jpg' alt='Image'>
-                                                <h3>Anna Dew</h3>
-                                                <span>Cover all my needs</span>
-                                                <p>The course identify things we want to change and then figure out the
-                                                    things that need to be done to create the desired outcome. The
-                                                    course helped me in clearly define problems and generate a wider
-                                                    variety of quality solutions. Support more structures analysis of
-                                                    options.</p>
+                                                <img class='reviewer-image' src='../../public/img/default-profile.png' alt='Image'>
+                                                <h3>".$reviews[0]['fullname']."</h3>
+                                                <span>
+                                                    <ul class='rating-star reviews-stars'>";
+                                                    for ($i=0; $i < $reviews[0]['rating']; $i++) { 
+                                                        $content .= "
+                                                        <li class='reviews-rating'>
+                                                            <i class='bx bxs-star'></i>
+                                                        </li>
+                                                        ";
+                                                    }
+                                                        
+                                                    $content .= "</ul>
+                                                    </span> 
+                                                <span>".$reviews[0]['review_title']."</span>
+                                                <p>".$reviews[0]['review_text']."</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -328,22 +328,22 @@ $content = "
                     <div class='account-wrap'>
                         <ul>
                             <li>
-                                قیمت <span class='bold'>".$course[0]['course_price']."</span>
+                                قیمت <span class='bold'>" . $course[0]['course_price'] . "</span>
                             </li>
                             <li>
-                                شروع <span>".$course[0]['start_date']."</span>
+                                شروع <span>" . $course[0]['start_date'] . "</span>
                             </li>
                             <li>
-                                پایان <span>".$course[0]['end_date']."</span>
+                                پایان <span>" . $course[0]['end_date'] . "</span>
                             </li>
                             <li>
-                                دسته بندی <span>".$course[0]['category_name']."</span>
+                                دسته بندی <span>" . $course[0]['category_name'] . "</span>
                             </li>
                             <li>
-                                تعداد باقیمانده: <span>".$course[0]['course_limit'] - $course[0]['course_students']."</span>
+                                تعداد باقیمانده: <span>" . $course[0]['course_limit'] - $course[0]['course_students'] . "</span>
                             </li>
                             <li>
-                                نعداد رزرو شده: <span>".$course[0]['course_students']."</span>
+                                نعداد رزرو شده: <span>" . $course[0]['course_students'] . "</span>
                             </li>
                             <li>
                                 سایت: <a href='../home/index'>eduon.com</a>

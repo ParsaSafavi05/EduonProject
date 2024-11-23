@@ -26,8 +26,27 @@ class EventsController extends BaseController
 
         $this->view('Events/index', [
             'events' => $events,
-            'speakers' => $speakers
-        
+            'speakers' => $speakers   
         ]);
+    }
+
+    public function single_event()
+    {
+        
+        $event_id = Request::getParam('id');
+
+        $event = DB::table('events')
+        ->join('cities', 'events.event_city', '=', 'cities.city_id')
+        ->join('countries', 'cities.country_id', '=', 'countries.country_id')
+        ->join('categories', 'events.event_category', '=', 'categories.category_id')
+        ->where('event_id', '=', $event_id)
+        ->first();
+
+        if ($event == true) {
+            $this->view('Events/single_event', ['event' => $event]);
+        }
+        else {
+            $this->redirect('errors/404');
+        }
     }
 }

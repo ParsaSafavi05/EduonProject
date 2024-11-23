@@ -54,7 +54,7 @@
     </div>
 
 
-    <div class="modal-newsletter-area">
+    <!-- <div class="modal-newsletter-area">
         <div class="modal fade" id="exampleModal" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -92,7 +92,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="navbar-area">

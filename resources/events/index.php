@@ -35,8 +35,8 @@ $content = "
         
         <div class='col-lg-6 col-sm-6'>
             <div class='single-event'>
-                <a href='single-event.html'>
-                    <img src='". $event['event_image'] ."' alt='Image'>
+                <a href='single_event?id=". $event['event_id'] ."'>
+                    <img src='". $event['event_thumbnail'] ."' alt='Image'>
                 </a>
                 <div class='event-content'>
                     <ul>
@@ -49,7 +49,7 @@ $content = "
                             ". $event['event_time'] ."
                         </li>
                     </ul>
-                    <a href='single-event.html'>
+                    <a href='single_event?id=". $event['event_id'] ."'>
                         <h3>
                         ". $event['event_title'] ."
                         <h3/>

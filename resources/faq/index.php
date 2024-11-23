@@ -6,14 +6,14 @@ $content = "
 <div class='page-title-area bg-3'>
 <div class='container'>
     <div class='page-title-content'>
-        <h2>FAQ</h2>
+        <h2>سوال های پر تکرار</h2>
         <ul>
             <li>
                 <a href='index.html'>
-                    Home
+                    خانه
                 </a>
             </li>
-            <li class='active'>FAQ</li>
+            <li class='active'>سوال های پر تکرار</li>
         </ul>
     </div>
 </div>
@@ -24,7 +24,7 @@ $content = "
 <div class='container'>
     <div class='section-title'>
         <span class='top-title'>FAQ</span>
-        <h2>Frequently asked questions</h2>
+        <h2>سوال های پر تکرار</h2>
     </div>
     <div class='faq-accordion'>
         <ul class='accordion'>

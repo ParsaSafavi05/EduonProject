@@ -311,10 +311,10 @@
                                 <a href="../faq">سوال های پر تکرار</a>
                             </li>
                             <li>
-                                <a href="../terms-conditions">سیاست حفض حریم خصوصی</a>
+                                <a href="../privacy-policy">سیاست حفظ حریم خصوصی</a>
                             </li>
                             <li>
-                                <a href="../privacy-policy">قوانین و مقررات</a>
+                                <a href="../terms-conditions">قوانین و مقررات</a>
                             </li>
                         </ul>
                     </div>

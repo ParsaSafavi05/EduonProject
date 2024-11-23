@@ -1,4 +1,5 @@
 <?php
+use App\Utilities\Session;
 
 if (!$userLoggedIn) {
     $content = "
@@ -120,7 +121,7 @@ if (!$userLoggedIn) {
         </section>
     ";
 } else {
-    $hi = "hi";
+    Session::start();
     $content = "
     <div class='page-title-area bg-7'>
             <div class='container'>
@@ -141,43 +142,53 @@ if (!$userLoggedIn) {
     
         <section class='user-area-style ptb-100'>
             <div class='container'>
-                <div class='row'>
+            <div class='row'>
                     <div class='col-lg-2'></div>
-                    <div class='col-lg-8'>
+                    <div class='col-lg-8'>";
+            if ($message = Session::flash('Error')) {
+                $content .= "<div class='alert alert-danger ltr'>
+                                <strong>خطا! </strong>$message .
+                            </div>";
+            }if ($message = Session::flash('Warning')) {
+                $content .= "<div class='alert alert-danger ltr'>
+                                <strong>اخطار! </strong>$message .
+                            </div>";
+            }
+                $content .= "
                         <div class='section-title'>
                             <h2>ثبت نام</h2>
                         </div>
                          <div class='contact-form-action'>
-        <form method='post' action='registerUser'>
+        <form method='post' action='update'>
                 <div class='row'>
                     <div class='col-12'>
                         <div class='form-group'>
                             <label>نام و نام خانوادگی</label>
-                            <input class='form-control' type='text' name='name' value='". $hi ."'>
+                            <input class='form-control' type='text' name='new_fullname' value='". $user_info['fullname'] ."'>
                         </div>
                     </div>
                     <div class='col-12'>
                         <div class='form-group'>
                             <label>آدرس ایمیل</label>
-                            <input class='form-control' type='email' name='email' value='". $hi ."'>
+                            <input class='form-control' type='email' name='new_email_address' value='". $user_info['email_address'] ."'>
                         </div>
                     </div>
                     <div class='col-12'>
                         <div class='form-group'>
                             <label>شماره تلفن</label>
-                            <input class='form-control' type='text' name='phone_number' value='". $hi ."'>
+                            <input class='form-control' type='text' name='new_phone_number' value='". $user_info['phone_number'] ."'>
                         </div>
                     </div>
                     <div class='col-12'>
                         <div class='form-group'>
                             <label>رمز عبور جدید</label>
-                            <input class='form-control' type='text' name='new_password' value='". $hi ."'>
+                            <input class='form-control' type='text' name='new_password'>
                         </div>
                     </div>
                     <div class='col-12'>
                         <div class='form-group'>
                             <label>تکرار رمز عبور جدید</label>
-                            <input class='form-control' type='text' name='repeat_password' value='". $hi ."'>
+                            <input class='form-control' type='text' name='repeat_password'>
                         </div>
                     </div>
                     <div class='col-12'>

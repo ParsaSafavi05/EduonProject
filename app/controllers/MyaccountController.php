@@ -11,6 +11,20 @@ class MyaccountController extends BaseController
     public function index()
     {
         Session::start();
-        $this->view('myaccount/index', ['']);
+        $userLoggedIn = Session::get('userLoggedIn');
+        $this->view('myaccount/index', ['userLoggedIn' => $userLoggedIn]);
+    }
+
+    public function update()
+    {
+        
+    }
+
+    public function logout()
+    {
+        Session::start();
+        Session::remove('userLoggedIn');
+        Session::destroy();
+        $this->redirect('myaccount/index', ['']);
     }
 }

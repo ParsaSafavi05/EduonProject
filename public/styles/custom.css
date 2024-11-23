@@ -10,3 +10,16 @@
     width: 50px !important;
     height: 50px !important;
 }
+
+.logout-btn{
+    padding: 10px 40px;
+    border-radius: 4px;
+    text-align: center;
+    border: #cf1515c1 2px solid;
+    color: #cf1515c1;
+}
+
+.logout-btn:hover{
+    color: #ffffff;
+    background-color: #cf1515c1;
+}

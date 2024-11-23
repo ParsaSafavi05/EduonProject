@@ -31,99 +31,106 @@ $content = "
             <li class='accordion-item'>
                 <a class='accordion-title active' href='javascript:void(0)'>
                     <i class='bx bx-plus'></i>
-                    How to register for a future learn account
+                    چطوری در یک حساب موقت ثبت نام کنیم؟
                 </a>
                 <div class='accordion-content show'>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat amet
-                        conse ctetur adipisicing elit, sed do aliqua. Ut enim ad minim.</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                     و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوعپ
+                     با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و 
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                     برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد 
+                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکاره.</p>
                 </div>
             </li>
             <li class='accordion-item'>
                 <a class='accordion-title' href='javascript:void(0)'>
                     <i class='bx bx-plus'></i>
-                    How to join a free course?
+                    چطور در یک دوره رایگان شرکت کنیم؟
                 </a>
                 <div class='accordion-content'>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat amet
-                        conse ctetur adipisicing elit, sed do aliqua. Ut enim ad minim.</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                     و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوعپ
+                     با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و 
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                     برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد 
+                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکاره.</p>
                 </div>
             </li>
             <li class='accordion-item'>
                 <a class='accordion-title' href='javascript:void(0)'>
                     <i class='bx bx-plus'></i>
-                    How to start a course on Eduon?
+                    چطور یک دوره را شروع کنیم؟
                 </a>
                 <div class='accordion-content'>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat amet
-                        conse ctetur adipisicing elit, sed do aliqua. Ut enim ad minim.</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                     و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوعپ
+                     با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و 
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                     برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد 
+                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکاره.</p>
                 </div>
             </li>
             <li class='accordion-item'>
                 <a class='accordion-title' href='javascript:void(0)'>
                     <i class='bx bx-plus'></i>
-                    What time will my course start?
+                    چه زمانی دوره من شروع میشه؟
                 </a>
                 <div class='accordion-content'>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat amet
-                        conse ctetur adipisicing elit, sed do aliqua. Ut enim ad minim.</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                     و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوعپ
+                     با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و 
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                     برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد 
+                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکاره.</p>
                 </div>
             </li>
             <li class='accordion-item'>
                 <a class='accordion-title' href='javascript:void(0)'>
                     <i class='bx bx-plus'></i>
-                    Can i upgrade after i finish the course?
+                    چطور میتونم بعد از اتمام دوره دوره را ارتقا بدم؟
                 </a>
                 <div class='accordion-content'>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat amet
-                        conse ctetur adipisicing elit, sed do aliqua. Ut enim ad minim.</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                     و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوعپ
+                     با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و 
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                     برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد 
+                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکاره.</p>
                 </div>
             </li>
             <li class='accordion-item'>
                 <a class='accordion-title' href='javascript:void(0)'>
                     <i class='bx bx-plus'></i>
-                    I'm not great with technology- will i be able to learn online?
+                    من با تکنولوژی نمیتونم به خوبی کار کنم آیا میتونم آنلاین یاد بگیرم؟
                 </a>
                 <div class='accordion-content'>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat amet
-                        conse ctetur adipisicing elit, sed do aliqua. Ut enim ad minim.</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                     و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوعپ
+                     با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و 
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                     برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد 
+                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکاره.</p>
                 </div>
             </li>
             <li class='accordion-item'>
                 <a class='accordion-title' href='javascript:void(0)'>
                     <i class='bx bx-plus'></i>
-                    Can i extend my enrolment if i need more time?
+                    آیا میتونم زمان ثبت نام در دوره را بیشتر کنم؟
                 </a>
                 <div class='accordion-content'>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. Conse ctetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat amet
-                        conse ctetur adipisicing elit, sed do aliqua. Ut enim ad minim.</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
+                    چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                     و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوعپ
+                     با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و 
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                     برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد 
+                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکاره.</p>
                 </div>
             </li>
         </ul>

@@ -71,7 +71,7 @@ foreach ($courses as $course) {
                             <!--<span class='price'>$39</span> --!>
 
                             <span class='tag'>" . $course['category_name'] . "</span>
-                            <a href='single-course.html'>
+                            <a href='viewcourse?id=". $course['course_id'] ."'>
                                 <h3>" . $course['course_title'] . "</h3>
                             </a>
                             <ul class='rating'>";

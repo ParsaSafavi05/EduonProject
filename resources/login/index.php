@@ -29,7 +29,6 @@ $content = '
         $content .= "<div class='alert alert-danger ltr'>
         <strong>مشکلی پیش آمده! </strong>$message .
         </div>";
-        // Session::remove("Error");
     }
     
     if ($message = Session::flash('Success')) {

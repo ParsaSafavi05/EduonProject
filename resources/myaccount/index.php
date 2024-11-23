@@ -33,7 +33,7 @@ if (!$userLoggedIn) {
                                     <div class='col-12'>
                                         <div class='form-group'>
                                             <label>ایمیل</label>
-                                            <input class='form-control' type='text' name='name'>
+                                            <input class='form-control' type='text' name='email-phone'>
                                         </div>
                                     </div>
                                     <div class='col-12'>
@@ -149,9 +149,15 @@ if (!$userLoggedIn) {
                 $content .= "<div class='alert alert-danger ltr'>
                                 <strong>خطا! </strong>$message
                             </div>";
-            }if ($message = Session::flash('Warning')) {
+            }
+            if ($message = Session::flash('Warning')) {
                 $content .= "<div class='alert alert-danger ltr'>
                                 <strong>اخطار! </strong>$message
+                            </div>";
+            }
+            if ($message = Session::flash('Success')) {
+                $content .= "<div class='alert alert-success ltr'>
+                                <strong> موفقیت! </strong>$message
                             </div>";
             }
                 $content .= "

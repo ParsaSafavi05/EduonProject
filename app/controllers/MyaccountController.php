@@ -15,13 +15,13 @@ class MyaccountController extends BaseController
         $userLoggedIn = Session::get('userLoggedIn');
 
         $user_info = DB::table('users')
-        ->where('user_id', '=', $userLoggedIn)
-        ->first();
+            ->where('user_id', '=', $userLoggedIn)
+            ->first();
 
         $this->view('myaccount/index', [
             'userLoggedIn' => $userLoggedIn,
             'user_info' => $user_info
-         ]);
+        ]);
     }
 
     public function update()
@@ -30,8 +30,8 @@ class MyaccountController extends BaseController
         $userLoggedIn = Session::get('userLoggedIn');
 
         $user_info = DB::table('users')
-        ->where('user_id', '=', $userLoggedIn)
-        ->first();
+            ->where('user_id', '=', $userLoggedIn)
+            ->first();
 
         $fullname = $user_info['fullname'];
         $email_address = $user_info['email_address'];
@@ -47,29 +47,47 @@ class MyaccountController extends BaseController
         $update_data = [];
 
         if ($fullname != $new_fullname) {
-            $update_data['fullname'] =$new_fullname;
+            if (!empty($new_fullname)) {
+                $update_data['fullname'] = $new_fullname;
+            } else {
+                Session::flash('Error', '.نام کاربری نمیتواند خالی باشد');
+            }
         }
 
         if ($email_address != $new_email_address) {
-            $update_data['email_address'] = $new_email_address;
-        }
-    
-        if ($phone_number != $new_phone_number) {
-            $update_data['phone_number'] = $new_phone_number;
-        }
-    
-        if ($password != $new_password) {
-            if ($new_password === $repeat_password) {
-                $update_data['password'] = $new_password;
+            if (!empty($new_email_address)) {
+                $update_data['email_address'] = $new_email_address;
             } else {
-                Session::flash('Error', 'رمز عبور با تکرارش برابر نیست.');
+                Session::flash('Error', '.آدرس ایمیل نمیتواند خالی باشد');
+            }
+        }
+
+        if ($phone_number != $new_phone_number) {
+            if (!empty($new_phone_number)) {
+                $update_data['phone_number'] = $new_phone_number;
+            } else {
+                Session::flash('Error', '.شماره تلفن نمیتواند خالی باشد');
+            }
+        }
+
+        if ($password != $new_password) {
+            if (!empty($new_password)) {
+                if ($new_password === $repeat_password) {
+                    $update_data['password'] = $new_password;
+                } else {
+                    Session::flash('Error', 'رمز عبور با تکرارش برابر نیست.');
+                }
+            } else {
+                Session::flash('Error', 'رمز عبور خالی است');
             }
         }
 
         if (!empty($update_data)) {
             DB::table('users')
-            ->where('user_id', '=', $userLoggedIn)
-            ->update($update_data);
+                ->where('user_id', '=', $userLoggedIn)
+                ->update($update_data);
+
+                Session::flash('Success', 'نغییرات با موفقیت اعمال شد.');
         } else {
             Session::flash('Warning', 'هیچ تغییری انجام نشد.');
         }

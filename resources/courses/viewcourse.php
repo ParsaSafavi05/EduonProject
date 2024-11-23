@@ -28,7 +28,7 @@ $content = "
                             <div class='col-lg-4 col-sm-4'>
                                 <div class='course-rating'>
                                     <img src='" . $course[0]['teacher_image'] . "' alt='Image'>
-                                    <h4><a href='instructors.html'>مدرس</a></h4>
+                                    <h4><a href='../instructors/index'>مدرس</a></h4>
                                     <span>" . $course[0]['teacher_fullname'] . "</span>
                                 </div>
                             </div>

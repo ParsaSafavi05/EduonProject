@@ -308,7 +308,7 @@
                                 <a href="../about">درباره ما</a>
                             </li>
                             <li>
-                                <a href="../faq">Help</a>
+                                <a href="../faq">سوال های پر تکرار</a>
                             </li>
                             <li>
                                 <a href="../terms-conditions">سیاست حفض حریم خصوصی</a>

@@ -147,11 +147,11 @@ if (!$userLoggedIn) {
                     <div class='col-lg-8'>";
             if ($message = Session::flash('Error')) {
                 $content .= "<div class='alert alert-danger ltr'>
-                                <strong>خطا! </strong>$message .
+                                <strong>خطا! </strong>$message
                             </div>";
             }if ($message = Session::flash('Warning')) {
                 $content .= "<div class='alert alert-danger ltr'>
-                                <strong>اخطار! </strong>$message .
+                                <strong>اخطار! </strong>$message
                             </div>";
             }
                 $content .= "

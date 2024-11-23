@@ -42,7 +42,7 @@ class Session
             if (isset($_SESSION['flash'][$key])) {
                 $message = $_SESSION['flash'][$key];
                 unset($_SESSION['flash'][$key]);
-                self::destroy();
+                // self::destroy();
                 return $message;
             }
             return null;
